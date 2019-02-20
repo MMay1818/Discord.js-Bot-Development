@@ -33,7 +33,7 @@ bot.on("message", async message => {
 
     let kickEmbed = new Discord.RichEmbed()
     .setDescription("~Kick~")
-    .setColor("#e56b00")
+    .setColor("#DF0101")
     .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
     .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
     .addField("Kicked In", message.channel)
@@ -59,7 +59,7 @@ bot.on("message", async message => {
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("~Ban~")
-    .setColor("#bc0000")
+    .setColor("#DF0101")
     .addField("Banned User", `${bUser} with ID ${bUser.id}`)
     .addField("Banned By", `<@${message.author.id}> with ID ${message.author.id}`)
     .addField("Banned In", message.channel)
@@ -87,7 +87,7 @@ bot.on("message", async message => {
 
     let reportEmbed = new Discord.RichEmbed()
     .setDescription("Reports")
-    .setColor("#15f153")
+    .setColor("#DF0101")
     .addField("Reported User", `${rUser} with ID: ${rUser.id}`)
     .addField("Reported By", `${message.author} with ID: ${message.author.id}`)
     .addField("Channel", message.channel)
@@ -112,7 +112,7 @@ bot.on("message", async message => {
     let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
     .setDescription("Server Information")
-    .setColor("#15f153")
+    .setColor("#DF0101")
     .setThumbnail(sicon)
     .addField("Server Name", message.guild.name)
     .addField("Created On", message.guild.createdAt)
@@ -129,7 +129,7 @@ bot.on("message", async message => {
     let bicon = bot.user.displayAvatarURL;
     let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
-    .setColor("#15f153")
+    .setColor("#DF0101")
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", bot.user.createdAt);
